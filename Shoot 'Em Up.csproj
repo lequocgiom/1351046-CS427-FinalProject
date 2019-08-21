@@ -255,6 +255,7 @@
     <Compile Include="Assets\Scripts\Game Play\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\Pooling System\PoolingManager.cs" />
     <Compile Include="Assets\Scripts\Scriptable Object\ShootProfile.cs" />
+    <Compile Include="Assets\Scripts\Transform\NodeMove.cs" />
     <Compile Include="Assets\Scripts\Transform\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Weapons\AutoShoot.cs" />
     <Compile Include="Assets\Scripts\Weapons\BulletMove.cs" />
