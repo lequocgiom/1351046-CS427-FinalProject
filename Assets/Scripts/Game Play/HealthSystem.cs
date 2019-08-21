@@ -10,7 +10,7 @@ public class HealthSystem : MonoBehaviour {
 
     private string tagName;
     private float currentHealth;
-
+    private DeathSystem deathScript;
 	// Use this for initialization
 	void OnEnable ()
     {
@@ -22,6 +22,10 @@ public class HealthSystem : MonoBehaviour {
         currentHealth = maxHealth;
 	}
 
+    private void Start()
+    {
+        deathScript = GetComponent<DeathSystem>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(tagName))
@@ -44,6 +48,17 @@ public class HealthSystem : MonoBehaviour {
     public void TakeDamage (float damage)
     {
         currentHealth -= damage;
+        CheckHealth();
     }
 
+    void CheckHealth()
+    {
+        if(currentHealth <= 0f)
+        {
+            //die
+            if (deathScript != null)
+                deathScript.Death();
+            // if it is enemy, add points
+        }
+    }
 }

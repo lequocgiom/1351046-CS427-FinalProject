@@ -250,6 +250,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Game Play\CreateObject.cs" />
+    <Compile Include="Assets\Scripts\Game Play\DeathSystem.cs" />
     <Compile Include="Assets\Scripts\Game Play\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\Pooling System\PoolingManager.cs" />
     <Compile Include="Assets\Scripts\Scriptable Object\ShootProfile.cs" />
