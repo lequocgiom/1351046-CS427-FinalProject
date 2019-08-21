@@ -22,7 +22,10 @@ public class DeathSystem : MonoBehaviour {
         for(int i = 0; i < spawnObjects.Length; i++)
         {
             // run the spawn function
+            spawnObjects[i].Create();
         }
+
+        onDeathEvent.Invoke();
 
         if (destroy)
         {
