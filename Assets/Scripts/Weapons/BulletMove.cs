@@ -2,18 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletMove : MonoBehaviour {
-
+public class BulletMove : MonoBehaviour
+{
     public float speed;
-    private Rigidbody myRb;
+    protected Rigidbody myRb;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         myRb = GetComponent<Rigidbody>();
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
         myRb.velocity = transform.forward * speed;
-	}
+    }
+
+    /*private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Activator") || other.CompareTag("Activator"))
+        {
+            PoolingManager.instance.ReturnObject(gameObject);
+        }
+    }*/
 }
