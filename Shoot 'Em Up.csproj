@@ -256,6 +256,7 @@
     <Compile Include="Assets\Scripts\Game Play\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\Pooling System\PoolingManager.cs" />
     <Compile Include="Assets\Scripts\Scriptable Object\ShootProfile.cs" />
+    <Compile Include="Assets\Scripts\Transform\AutoMove.cs" />
     <Compile Include="Assets\Scripts\Transform\AutoRotate.cs" />
     <Compile Include="Assets\Scripts\Transform\LookAtPlayer.cs" />
     <Compile Include="Assets\Scripts\Transform\NodeMove.cs" />
