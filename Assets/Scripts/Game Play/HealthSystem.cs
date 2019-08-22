@@ -8,7 +8,7 @@ public class HealthSystem : MonoBehaviour {
     public GameObject hitEffect, healthBar;
     public bool isEnemy = true;
 
-    private string tagName;
+    private string tagName = "Bullet";
     private float currentHealth;
     private DeathSystem deathScript;
 	// Use this for initialization
