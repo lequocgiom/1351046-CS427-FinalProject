@@ -33,7 +33,7 @@ public class HealthSystem : MonoBehaviour
 
     private void Start()
     {
-        
+        LevelManager.instance.RegisterEnemy();
         deathScript = GetComponent<DeathSystem>();
     }
 
@@ -41,7 +41,8 @@ public class HealthSystem : MonoBehaviour
     {
         if (other.CompareTag(tagName))
         {
-            
+            if (!isEnemy)
+                LevelManager.instance.PlayerHit();
 
             Vector3 triggerPosition = other.ClosestPointOnBounds(transform.position);
             Vector3 direction = triggerPosition - transform.position;
@@ -82,7 +83,7 @@ public class HealthSystem : MonoBehaviour
             {
                 dead = true;
                 gameObject.tag = "Untagged";
-                
+                LevelManager.instance.AddEnemyKill(Random.Range(minScore, maxScore));
             }
         }
     }

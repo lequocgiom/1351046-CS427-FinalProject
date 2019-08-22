@@ -14,7 +14,7 @@ public class HumanRescue : MonoBehaviour
 
     private void Start()
     {
-        
+        LevelManager.instance.RegisterRescue();
 
         if (GameObject.FindGameObjectWithTag("Player"))
             player = GameObject.FindGameObjectWithTag("Player");
@@ -37,7 +37,7 @@ public class HumanRescue : MonoBehaviour
             yield return null;
         }
 
-        
+        LevelManager.instance.AddRescue();
         onRescued.Invoke();
         Destroy(gameObject, 1.5f);
     }

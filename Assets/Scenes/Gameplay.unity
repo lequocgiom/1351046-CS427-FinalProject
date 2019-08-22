@@ -177,7 +177,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &39225890
 Prefab:
@@ -3950,7 +3950,7 @@ Prefab:
     - target: {fileID: 114497935517414488, guid: 9eadb64d133c0214aa986dcb447f7242,
         type: 2}
       propertyPath: onDeathEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114446223233474682, guid: 9eadb64d133c0214aa986dcb447f7242,
         type: 2}
@@ -4134,6 +4134,31 @@ Prefab:
     - target: {fileID: 1568247387413296, guid: 9eadb64d133c0214aa986dcb447f7242, type: 2}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497935517414488, guid: 9eadb64d133c0214aa986dcb447f7242,
+        type: 2}
+      propertyPath: onDeathEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497935517414488, guid: 9eadb64d133c0214aa986dcb447f7242,
+        type: 2}
+      propertyPath: onDeathEvent.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497935517414488, guid: 9eadb64d133c0214aa986dcb447f7242,
+        type: 2}
+      propertyPath: onDeathEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1291328563}
+    - target: {fileID: 114497935517414488, guid: 9eadb64d133c0214aa986dcb447f7242,
+        type: 2}
+      propertyPath: onDeathEvent.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: GameEnd
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497935517414488, guid: 9eadb64d133c0214aa986dcb447f7242,
+        type: 2}
+      propertyPath: onDeathEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9eadb64d133c0214aa986dcb447f7242, type: 2}
@@ -5918,7 +5943,7 @@ Transform:
   m_Children:
   - {fileID: 1522926238}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &558537267
 MonoBehaviour:
@@ -6438,7 +6463,7 @@ Transform:
   - {fileID: 265410799}
   - {fileID: 361756868}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &692964023
 MonoBehaviour:
@@ -6446,7 +6471,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 692964018}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdf529417cbba614eaaa3f9c5062d702, type: 3}
   m_Name: 
@@ -6489,7 +6514,18 @@ MonoBehaviour:
   - {fileID: 692964024}
   onDeathEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1291328563}
+        m_MethodName: GameEnd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &692964026
@@ -7990,7 +8026,7 @@ Transform:
   m_Children:
   - {fileID: 116944908}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1071870265
 Prefab:
@@ -8718,6 +8754,60 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12, y: 7, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1291328562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1291328564}
+  - component: {fileID: 1291328563}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1291328563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1291328562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8129fe1912b0743ae314a669aa0e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medals:
+    rescue: 0
+    kill: 0
+    untouched: 0
+  totalEnemy: 0
+  enemyKilled: 0
+  totalRescue: 0
+  humanRescued: 0
+  score: 0
+  onGameEnd:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!4 &1291328564
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1291328562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1302869640
 Prefab:
   m_ObjectHideFlags: 0
@@ -9907,7 +9997,7 @@ Transform:
   - {fileID: 1256776452}
   - {fileID: 1580507654}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1627724264
 Prefab:
@@ -10014,7 +10104,7 @@ Transform:
   - {fileID: 2021851765}
   - {fileID: 600379670}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1646246713 stripped
 Transform:
@@ -10519,7 +10609,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &2021851764
 GameObject:
