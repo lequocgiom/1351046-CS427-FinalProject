@@ -4178,6 +4178,7 @@ GameObject:
   - component: {fileID: 1177066525}
   - component: {fileID: 1177066524}
   - component: {fileID: 1177066523}
+  - component: {fileID: 1177066527}
   m_Layer: 0
   m_Name: Air Object Camera
   m_TagString: MainCamera
@@ -4249,6 +4250,21 @@ Transform:
   m_Father: {fileID: 1602302327}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1177066527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1177066522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32020236d76cee4fb6a275b36a1d455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 692964022}
+  minX: -1.4
+  maxX: 1.4
+  speed: 2
 --- !u!1001 &1180322135
 Prefab:
   m_ObjectHideFlags: 0

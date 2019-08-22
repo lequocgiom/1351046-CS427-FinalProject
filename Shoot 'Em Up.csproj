@@ -262,6 +262,7 @@
     <Compile Include="Assets\Scripts\Scriptable Object\ShootProfile.cs" />
     <Compile Include="Assets\Scripts\Transform\AutoMove.cs" />
     <Compile Include="Assets\Scripts\Transform\AutoRotate.cs" />
+    <Compile Include="Assets\Scripts\Transform\CameraScript.cs" />
     <Compile Include="Assets\Scripts\Transform\CoinMovement.cs" />
     <Compile Include="Assets\Scripts\Transform\LookAtPlayer.cs" />
     <Compile Include="Assets\Scripts\Transform\NodeMove.cs" />
