@@ -2,34 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthSystem : MonoBehaviour {
-
+public class HealthSystem : MonoBehaviour
+{
     public float maxHealth = 10f;
     public GameObject hitEffect, healthBar;
     public bool isEnemy = true;
+    public int minScore = 25, maxScore = 50;
 
     private string tagName = "Bullet";
     private float currentHealth;
     private DeathSystem deathScript;
-	// Use this for initialization
-	void OnEnable ()
+    private bool dead;
+
+    // Use this for initialization
+    void OnEnable()
     {
         if (isEnemy)
+        {
             tagName = "Bullet";
+        }
         else
+        {
             tagName = "EnemyBullet";
+            
+        }
+
 
         currentHealth = maxHealth;
-	}
+    }
 
     private void Start()
     {
+        
         deathScript = GetComponent<DeathSystem>();
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(tagName))
         {
+            
+
             Vector3 triggerPosition = other.ClosestPointOnBounds(transform.position);
             Vector3 direction = triggerPosition - transform.position;
 
@@ -37,7 +50,7 @@ public class HealthSystem : MonoBehaviour {
 
             PoolingManager.instance.ReturnObject(fx, 1f);
 
-            // do damage here
+            //do damage here
             float damage = float.Parse(other.name);
             TakeDamage(damage);
 
@@ -45,7 +58,7 @@ public class HealthSystem : MonoBehaviour {
         }
     }
 
-    public void TakeDamage (float damage)
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
         CheckHealth();
@@ -54,13 +67,23 @@ public class HealthSystem : MonoBehaviour {
 
     void CheckHealth()
     {
-        if(currentHealth <= 0f)
+        if (currentHealth <= 0f)
         {
-            //die
+            if (healthBar != null)
+                healthBar.transform.parent.gameObject.SetActive(false);
+
+            //TO-DO:die
             if (deathScript != null)
                 deathScript.Death();
 
-            // if it is enemy, add points
+            //TO-DO:if its enemy, then add points
+
+            if (isEnemy && !dead)
+            {
+                dead = true;
+                gameObject.tag = "Untagged";
+                
+            }
         }
     }
 

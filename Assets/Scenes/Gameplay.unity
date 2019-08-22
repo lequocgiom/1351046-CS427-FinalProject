@@ -6372,6 +6372,7 @@ GameObject:
   - component: {fileID: 692964029}
   - component: {fileID: 692964028}
   - component: {fileID: 692964027}
+  - component: {fileID: 692964030}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -6445,7 +6446,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 692964018}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdf529417cbba614eaaa3f9c5062d702, type: 3}
   m_Name: 
@@ -6506,6 +6507,8 @@ MonoBehaviour:
   hitEffect: {fileID: 1096847040765866, guid: 4d6b65d248ca7df4ba61bcb0804beef9, type: 2}
   healthBar: {fileID: 355823422}
   isEnemy: 0
+  minScore: 25
+  maxScore: 50
 --- !u!82 &692964027
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6627,6 +6630,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magnetPower: 2
   magnetRange: 2
+--- !u!114 &692964030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 692964018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdf529417cbba614eaaa3f9c5062d702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootProfile: {fileID: 11400000, guid: 4a27f438ee598174d862ba1916176bef, type: 2}
+  bulletPrefabs: {fileID: 1518006604847634, guid: a189cfc3a69e2eb4db63f16991989828,
+    type: 2}
+  firePoint: {fileID: 1707035496}
 --- !u!1001 &704584625
 Prefab:
   m_ObjectHideFlags: 0
@@ -9493,6 +9511,8 @@ MonoBehaviour:
   hitEffect: {fileID: 1096847040765866, guid: 4d6b65d248ca7df4ba61bcb0804beef9, type: 2}
   healthBar: {fileID: 2072173201}
   isEnemy: 1
+  minScore: 25
+  maxScore: 50
 --- !u!65 &1522926236
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10263,6 +10283,10 @@ MonoBehaviour:
   - poolObject: {fileID: 1079048104523540, guid: 13ad748ad81a1aa41933af30b5e48b35,
       type: 2}
     poolAmount: 20
+    growAble: 1
+  - poolObject: {fileID: 1518006604847634, guid: a189cfc3a69e2eb4db63f16991989828,
+      type: 2}
+    poolAmount: 10
     growAble: 1
 --- !u!4 &1930556356
 Transform:
