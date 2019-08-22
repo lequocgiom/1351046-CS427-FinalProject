@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 114944904602237974}
   - component: {fileID: 114871758473562172}
   - component: {fileID: 114186990659479348}
+  - component: {fileID: 114289784676981292}
   - component: {fileID: 65306787269335480}
   m_Layer: 9
   m_Name: Turret_Missile
@@ -592,6 +593,22 @@ MonoBehaviour:
   bulletPrefabs: {fileID: 1518006604847634, guid: 5e4009435af2af8498823331573c0b15,
     type: 2}
   firePoint: {fileID: 0}
+--- !u!114 &114289784676981292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1555120948604132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2585d734202ffdf4ba391df447e741a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToCreate: {fileID: 1079048104523540, guid: 13ad748ad81a1aa41933af30b5e48b35,
+    type: 2}
+  createAmount: 5
+  autoDestroy: 0
+  timeToDestroy: 0
 --- !u!114 &114489528574757906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -634,6 +651,7 @@ MonoBehaviour:
   destroyAfter: 0
   spawnObjects:
   - {fileID: 114186990659479348}
+  - {fileID: 114289784676981292}
   onDeathEvent:
     m_PersistentCalls:
       m_Calls:

@@ -252,14 +252,17 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemy Scripts\ActivatorScript.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyWaves.cs" />
+    <Compile Include="Assets\Scripts\Game Play\CoinPickup.cs" />
     <Compile Include="Assets\Scripts\Game Play\CreateObject.cs" />
     <Compile Include="Assets\Scripts\Game Play\DeathSystem.cs" />
     <Compile Include="Assets\Scripts\Game Play\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\Game Play\HumanRescue.cs" />
+    <Compile Include="Assets\Scripts\Game Play\MagnetScript.cs" />
     <Compile Include="Assets\Scripts\Pooling System\PoolingManager.cs" />
     <Compile Include="Assets\Scripts\Scriptable Object\ShootProfile.cs" />
     <Compile Include="Assets\Scripts\Transform\AutoMove.cs" />
     <Compile Include="Assets\Scripts\Transform\AutoRotate.cs" />
+    <Compile Include="Assets\Scripts\Transform\CoinMovement.cs" />
     <Compile Include="Assets\Scripts\Transform\LookAtPlayer.cs" />
     <Compile Include="Assets\Scripts\Transform\NodeMove.cs" />
     <Compile Include="Assets\Scripts\Transform\PlayerMovement.cs" />
