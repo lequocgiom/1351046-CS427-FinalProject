@@ -4825,6 +4825,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ba048271438d448b3a7e1c003b5542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poolItems:
+  - poolObject: {fileID: 1036016277982936, guid: 383a33bda50286b4a9b4b44c306c7e1f,
+      type: 2}
+    poolAmount: 30
+    growAble: 1
+  - poolObject: {fileID: 1036016277982936, guid: fc69f7ed7a0c36f41b7aeece9e0c0432,
+      type: 2}
+    poolAmount: 30
+    growAble: 1
+  - poolObject: {fileID: 1096847040765866, guid: 4d6b65d248ca7df4ba61bcb0804beef9,
+      type: 2}
+    poolAmount: 20
+    growAble: 1
+  - poolObject: {fileID: 1158129094165586, guid: d59d38c888baf2648bf081ab00de3fa4,
+      type: 2}
+    poolAmount: 10
+    growAble: 1
+  - poolObject: {fileID: 1518006604847634, guid: 5e4009435af2af8498823331573c0b15,
+      type: 2}
+    poolAmount: 10
+    growAble: 1
 --- !u!4 &1930556356
 Transform:
   m_ObjectHideFlags: 0
