@@ -272,6 +272,7 @@
     <Compile Include="Assets\Scripts\Weapons\LaserScript.cs" />
     <Compile Include="Assets\Scripts\Weapons\MegaBombScript.cs" />
     <Compile Include="Assets\Scripts\Weapons\MissileMove.cs" />
+    <Compile Include="Assets\Scripts\Weapons\ShieldScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
