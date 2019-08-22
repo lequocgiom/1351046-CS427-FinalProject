@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DeathSystem : MonoBehaviour {
-
-    public bool destroy = true;
+public class DeathSystem : MonoBehaviour
+{
+    public bool destroy = true, backToPool = true;
     public float destroyAfter;
     public CreateObject[] spawnObjects;
     public UnityEvent onDeathEvent;
@@ -19,9 +19,9 @@ public class DeathSystem : MonoBehaviour {
 
     public void Death()
     {
-        for(int i = 0; i < spawnObjects.Length; i++)
+        for (int i = 0; i < spawnObjects.Length; i++)
         {
-            // run the spawn function
+            //we run the spawn function
             spawnObjects[i].Create();
         }
 
@@ -29,10 +29,13 @@ public class DeathSystem : MonoBehaviour {
 
         if (destroy)
         {
-            PoolingManager.instance.ReturnObject(gameObject, destroyAfter);
+            if (backToPool)
+                PoolingManager.instance.ReturnObject(gameObject, destroyAfter);
+            else
+                Destroy(gameObject, destroyAfter);
         }
 
-        for (int i = 0; i < colliders.Length; i++ )
+        for (int i = 0; i < colliders.Length; i++)
         {
             colliders[i].enabled = false;
         }

@@ -2269,13 +2269,15 @@ GameObject:
   m_Component:
   - component: {fileID: 558537266}
   - component: {fileID: 558537267}
+  - component: {fileID: 558537269}
+  - component: {fileID: 558537268}
   m_Layer: 0
   m_Name: Enemy Waves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &558537266
 Transform:
   m_ObjectHideFlags: 0
@@ -2283,7 +2285,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 558537265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.55, y: 0, z: 16.89}
+  m_LocalPosition: {x: -0.55, y: 0, z: 24.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1522926238}
@@ -2305,6 +2307,50 @@ MonoBehaviour:
   intervalBetweenEnemy: 1.5
   removeAfter: 10
   childs: []
+--- !u!114 &558537268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 558537265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 540d745e7a2bc9f48aad6edb2b260397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onEnterScreen:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 558537267}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onExitScreen:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!65 &558537269
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 558537265}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: -7.69}
 --- !u!1 &600379669
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,6 +2851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroy: 1
+  backToPool: 1
   destroyAfter: 0
   spawnObjects:
   - {fileID: 692964024}
@@ -5498,7 +5545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1522926234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5510,7 +5557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ba73d027c648846b6ae0824b139727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 3
   hitEffect: {fileID: 1096847040765866, guid: 4d6b65d248ca7df4ba61bcb0804beef9, type: 2}
   healthBar: {fileID: 2072173201}
   isEnemy: 1
@@ -5553,7 +5600,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da87a55e2db3b1e4ca79278228d08176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroy: 0
+  destroy: 1
+  backToPool: 0
   destroyAfter: 0
   spawnObjects:
   - {fileID: 1522926240}
