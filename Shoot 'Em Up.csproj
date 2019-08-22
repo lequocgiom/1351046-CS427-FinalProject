@@ -269,6 +269,7 @@
     <Compile Include="Assets\Scripts\Transform\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Weapons\AutoShoot.cs" />
     <Compile Include="Assets\Scripts\Weapons\BulletMove.cs" />
+    <Compile Include="Assets\Scripts\Weapons\LaserScript.cs" />
     <Compile Include="Assets\Scripts\Weapons\MissileMove.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
