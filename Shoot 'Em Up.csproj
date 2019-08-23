@@ -278,6 +278,7 @@
     <Compile Include="Assets\Scripts\Transform\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\UIScreen.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\UpdateMoney.cs" />
     <Compile Include="Assets\Scripts\Weapons\AutoShoot.cs" />
     <Compile Include="Assets\Scripts\Weapons\BulletMove.cs" />
     <Compile Include="Assets\Scripts\Weapons\LaserScript.cs" />

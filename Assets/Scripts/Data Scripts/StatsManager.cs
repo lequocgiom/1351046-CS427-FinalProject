@@ -49,7 +49,7 @@ public class StatsManager : MonoBehaviour
         money += value;
 
         //TO-DO: ui update system
-       
+        UpdateMoney.instance.DisplayMoney(money);
     }
 
     //this is for getting the stats value, such as weapon or powerups.

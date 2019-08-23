@@ -197,9 +197,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 256797794}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffdae254879fa6e48bf71dd8e69025a2, type: 3}
+  m_Script: {fileID: 11500000, guid: b516a815879ecad49b78b7ef7f2c9e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneyDisplay: {fileID: 256797796}
+  scoreDisplay: {fileID: 0}
 --- !u!1 &298148276
 GameObject:
   m_ObjectHideFlags: 0
