@@ -10332,7 +10332,7 @@ GameObject:
   - component: {fileID: 1930556356}
   - component: {fileID: 1930556355}
   m_Layer: 0
-  m_Name: Pooling Manger
+  m_Name: Pooling Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
