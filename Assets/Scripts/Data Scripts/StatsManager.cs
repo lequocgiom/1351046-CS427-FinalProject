@@ -8,7 +8,7 @@ public class StatsManager : MonoBehaviour
     public static StatsManager instance;
 
     public int lives = 5;
-    public int money = 500;
+    public int money;
 
     [Header("Upgrade Options")]
     public List<ShootProfile> blasterUpgradeList = new List<ShootProfile>();
@@ -92,8 +92,53 @@ public class StatsManager : MonoBehaviour
         return null;
     }
 
+    public void SaveProgress()
+    {
+        SaveData saveData = new SaveData();
 
+        saveData.lives = lives;
+        saveData.money = money;
 
+        saveData.achievementList = achievementList;
+        saveData.statsTimer = statsTimer;
+
+        saveData.stats = stats;
+
+        SaveSystem.Save(saveData);
+    }
+
+    public void LoadProgress()
+    {
+        SaveData loadData = SaveSystem.Load<SaveData>();
+
+        lives = loadData.lives;
+        money = loadData.money;
+
+        achievementList = loadData.achievementList;
+        statsTimer = loadData.statsTimer;
+
+        stats = loadData.stats;
+
+        UpdateItemDisplay();
+    }
+
+    void UpdateItemDisplay()
+    {
+        UpgradeItem[] items = FindObjectsOfType<UpgradeItem>();
+       
+
+        for (int i = 0; i < items.Length; i++)
+        {
+            items[i].UpdateItemDisplay();
+        }
+
+       
+    }
+
+    public void AddMedals(string levelName, Medals medal)
+    {
+        achievementList.Add(levelName, medal);
+    }
 }
 
 [System.Serializable]
