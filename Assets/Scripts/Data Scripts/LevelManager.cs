@@ -66,7 +66,7 @@ public class LevelManager : MonoBehaviour
         if (humanRescued >= totalRescue)
             medals.rescue = true;
 
-        
+        StatsManager.instance.AddMedals(levelName, medals);
 
         onGameEnd.Invoke();
     }

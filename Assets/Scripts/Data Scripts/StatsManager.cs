@@ -49,7 +49,7 @@ public class StatsManager : MonoBehaviour
         money += value;
 
         //TO-DO: ui update system
-        
+       
     }
 
     //this is for getting the stats value, such as weapon or powerups.
@@ -125,14 +125,17 @@ public class StatsManager : MonoBehaviour
     void UpdateItemDisplay()
     {
         UpgradeItem[] items = FindObjectsOfType<UpgradeItem>();
-       
+        LevelMenu[] levelMenus = FindObjectsOfType<LevelMenu>();
 
         for (int i = 0; i < items.Length; i++)
         {
             items[i].UpdateItemDisplay();
         }
 
-       
+        for (int i = 0; i < levelMenus.Length; i++)
+        {
+            levelMenus[i].UpdateMenu();
+        }
     }
 
     public void AddMedals(string levelName, Medals medal)

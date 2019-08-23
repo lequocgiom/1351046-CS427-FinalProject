@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1577857769922132}
+  m_IsPrefabParent: 1
+--- !u!1 &1577857769922132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4795090652523684}
+  - component: {fileID: 114563024563767960}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4795090652523684
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1577857769922132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.524372, y: 367.81793, z: -6.0392795}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114563024563767960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1577857769922132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aaeb0d4fcd227947a2292e97f1922b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 5
+  money: 500
+  blasterUpgradeList:
+  - {fileID: 11400000, guid: 4e34d0c39a6a6a54ca015ff0acf0f8e3, type: 2}
+  - {fileID: 11400000, guid: 207e23b350d42cb46951fb1aa5553072, type: 2}
+  - {fileID: 11400000, guid: fff253a64697ca04a89208d1ea4dc4ea, type: 2}
+  - {fileID: 11400000, guid: 39022d613c5ba93468818f5763d87d45, type: 2}
+  - {fileID: 11400000, guid: b61e699a498c9c54ab842da96a4280da, type: 2}
+  missileUpgradeList:
+  - {fileID: 11400000, guid: 4a27f438ee598174d862ba1916176bef, type: 2}
+  - {fileID: 11400000, guid: b6bc3479a438a1c408a7d0f98e037adf, type: 2}
+  - {fileID: 11400000, guid: c02bd5dc8defe2045966defbc231ec75, type: 2}
+  - {fileID: 11400000, guid: a54dd23b4ef6b7043b9aca0cdc6b7c3a, type: 2}
+  - {fileID: 11400000, guid: e1ed84d05e8d29343b6ab85110a06d93, type: 2}
+  healthUpgradeList:
+  - 10
+  - 12
+  - 14
+  - 16
+  - 18
+  megaBombUpgList:
+  - radius: 4
+    damage: 25
+  - radius: 5
+    damage: 30
+  - radius: 6
+    damage: 35
+  - radius: 7
+    damage: 40
+  - radius: 8
+    damage: 45
+  shieldUpgList:
+  - shieldDuration: 3
+  - shieldDuration: 4
+  - shieldDuration: 5
+  - shieldDuration: 6
+  - shieldDuration: 7
+  laserUpgList:
+  - laserDuration: 3
+  - laserDuration: 4
+  - laserDuration: 5
+  - laserDuration: 6
+  - laserDuration: 7
+  stats:
+  - name: Blaster
+    level: 1
+    upgradeTime:
+    - 2
+    - 4
+    - 6
+    - 8
+    - 10
+  - name: Missile
+    level: 1
+    upgradeTime:
+    - 2
+    - 4
+    - 6
+    - 8
+    - 10
+  - name: Health
+    level: 1
+    upgradeTime:
+    - 2
+    - 0.4
+    - 0.6
+    - 8
+    - 10
+  - name: MegaBomb
+    level: 1
+    upgradeTime:
+    - 2
+    - 4
+    - 6
+    - 8
+    - 10
+  - name: Shield
+    level: 1
+    upgradeTime:
+    - 2
+    - 4
+    - 6
+    - 8
+    - 10
+  - name: Laser
+    level: 1
+    upgradeTime:
+    - 2
+    - 4
+    - 6
+    - 8
+    - 10

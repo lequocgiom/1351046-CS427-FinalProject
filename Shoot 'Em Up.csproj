@@ -253,7 +253,9 @@
     <Compile Include="Assets\Scripts\Data Scripts\DebugScript.cs" />
     <Compile Include="Assets\Scripts\Data Scripts\DialogManager.cs" />
     <Compile Include="Assets\Scripts\Data Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Data Scripts\LevelMenu.cs" />
     <Compile Include="Assets\Scripts\Data Scripts\SaveSystem.cs" />
+    <Compile Include="Assets\Scripts\Data Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\Data Scripts\StatsManager.cs" />
     <Compile Include="Assets\Scripts\Data Scripts\UpgradeItem.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\ActivatorScript.cs" />
@@ -261,6 +263,7 @@
     <Compile Include="Assets\Scripts\Game Play\CoinPickup.cs" />
     <Compile Include="Assets\Scripts\Game Play\CreateObject.cs" />
     <Compile Include="Assets\Scripts\Game Play\DeathSystem.cs" />
+    <Compile Include="Assets\Scripts\Game Play\GameEndScript.cs" />
     <Compile Include="Assets\Scripts\Game Play\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\Game Play\HumanRescue.cs" />
     <Compile Include="Assets\Scripts\Game Play\MagnetScript.cs" />
