@@ -20,7 +20,7 @@ public class ShieldScript : MonoBehaviour
         col = GetComponent<Collider>();
         col.enabled = false;
 
-        
+        shieldDuration = StatsManager.instance.GetStatsValue("Shield", StatsManager.instance.shieldUpgList).shieldDuration;
     }
 
     // Update is called once per frame

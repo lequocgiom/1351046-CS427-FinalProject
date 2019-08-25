@@ -16,9 +16,11 @@ public class LaserScript : MonoBehaviour
     void Start()
     {
         coroutineLaserDur = new WaitForSeconds(laserDuration);
+
         col = GetComponent<Collider>();
         col.enabled = false;
 
+        laserDuration = StatsManager.instance.GetStatsValue("Laser", StatsManager.instance.laserUpgList).laserDuration;
     }
 
     // Update is called once per frame
