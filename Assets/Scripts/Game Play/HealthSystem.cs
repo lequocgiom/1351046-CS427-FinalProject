@@ -24,7 +24,7 @@ public class HealthSystem : MonoBehaviour
         else
         {
             tagName = "EnemyBullet";
-            
+            maxHealth = StatsManager.instance.GetStatsValue("Health", StatsManager.instance.healthUpgradeList);
         }
 
 

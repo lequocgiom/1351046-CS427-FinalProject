@@ -36,14 +36,14 @@ public class LevelManager : MonoBehaviour
     {
         enemyKilled++;
         score += scoreValue;
-        
+        UpdateMoney.instance.DisplayScore(score);
     }
 
     public void AddRescue()
     {
         humanRescued++;
         score += 75;
-        
+        UpdateMoney.instance.DisplayScore(score);
     }
 
     public void PlayerHit()
