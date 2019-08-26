@@ -88,9 +88,10 @@ GameObject:
   - component: {fileID: 114103430354395196}
   - component: {fileID: 114300315665937802}
   - component: {fileID: 114883119967659006}
+  - component: {fileID: 114011545203734568}
   m_Layer: 9
   m_Name: Round_Turret
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -627,6 +628,22 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114011545203734568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1388806411870962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2585d734202ffdf4ba391df447e741a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToCreate: {fileID: 1079048104523540, guid: 13ad748ad81a1aa41933af30b5e48b35,
+    type: 2}
+  createAmount: 5
+  autoDestroy: 0
+  timeToDestroy: 0
 --- !u!114 &114050066270982436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -657,6 +674,8 @@ MonoBehaviour:
   hitEffect: {fileID: 1096847040765866, guid: 4d6b65d248ca7df4ba61bcb0804beef9, type: 2}
   healthBar: {fileID: 0}
   isEnemy: 1
+  minScore: 25
+  maxScore: 50
 --- !u!114 &114103430354395196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -669,8 +688,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroy: 0
+  backToPool: 1
   destroyAfter: 0
-  spawnObjects: []
+  spawnObjects:
+  - {fileID: 114011545203734568}
+  - {fileID: 114300315665937802}
   onDeathEvent:
     m_PersistentCalls:
       m_Calls:

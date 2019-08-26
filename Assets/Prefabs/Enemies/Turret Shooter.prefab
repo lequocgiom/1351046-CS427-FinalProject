@@ -91,9 +91,10 @@ GameObject:
   - component: {fileID: 114096432763845784}
   - component: {fileID: 65102364757741992}
   - component: {fileID: 114079924127483634}
+  - component: {fileID: 114899207822745658}
   m_Layer: 0
   m_Name: Turret Shooter
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -644,9 +645,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroy: 0
+  backToPool: 1
   destroyAfter: 0
   spawnObjects:
   - {fileID: 114096432763845784}
+  - {fileID: 114899207822745658}
   onDeathEvent:
     m_PersistentCalls:
       m_Calls:
@@ -723,6 +726,8 @@ MonoBehaviour:
   hitEffect: {fileID: 1096847040765866, guid: 4d6b65d248ca7df4ba61bcb0804beef9, type: 2}
   healthBar: {fileID: 0}
   isEnemy: 1
+  minScore: 25
+  maxScore: 50
 --- !u!114 &114509022627141088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -753,6 +758,22 @@ MonoBehaviour:
   bulletPrefabs: {fileID: 1036016277982936, guid: fc69f7ed7a0c36f41b7aeece9e0c0432,
     type: 2}
   firePoint: {fileID: 0}
+--- !u!114 &114899207822745658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436603860606316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2585d734202ffdf4ba391df447e741a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToCreate: {fileID: 1079048104523540, guid: 13ad748ad81a1aa41933af30b5e48b35,
+    type: 2}
+  createAmount: 5
+  autoDestroy: 0
+  timeToDestroy: 0
 --- !u!198 &198071127494605478
 ParticleSystem:
   m_ObjectHideFlags: 1
