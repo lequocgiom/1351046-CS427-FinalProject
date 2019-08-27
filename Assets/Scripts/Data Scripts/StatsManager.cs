@@ -141,6 +141,7 @@ public class StatsManager : MonoBehaviour
     public void AddMedals(string levelName, Medals medal)
     {
         achievementList.Add(levelName, medal);
+        achievementList.Clear();
     }
 }
 

@@ -15,6 +15,13 @@ public class PowerUpMenu : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        if (Input.GetKeyDown(KeyCode.L))
+            EnableLaser();
+        if (Input.GetKeyDown(KeyCode.S))
+            EnableShield();
+        if (Input.GetKeyDown(KeyCode.B))
+            EnableMegaBomb();
+
         shieldText.text = "S" + shieldAmount;
         laserText.text = "L" + laserAmount;
         megaBombText.text = "M" + megaBombAmount;
@@ -22,12 +29,13 @@ public class PowerUpMenu : MonoBehaviour
         shieldButton.onClick.AddListener(EnableShield);
         laserButton.onClick.AddListener(EnableLaser);
         megaBombButton.onClick.AddListener(EnableMegaBomb);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_STANDALONE_WIN
         BulletTime(Input.GetMouseButton(1));
 #elif UNITY_ANDROID
         BulletTime(Input.touchCount == 0 || EventSystem.current.IsPointerOverGameObject(0));    

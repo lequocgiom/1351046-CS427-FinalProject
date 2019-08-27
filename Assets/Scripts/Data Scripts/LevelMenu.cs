@@ -45,5 +45,6 @@ public class LevelMenu : MonoBehaviour
     void GoToLevel()
     {
         SceneLoader.instance.ChangeScene(sceneTarget);
+        
     }
 }

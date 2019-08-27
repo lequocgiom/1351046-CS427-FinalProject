@@ -29,6 +29,7 @@ public class ShieldScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             ShieldUp();
+            
         }
     }
 

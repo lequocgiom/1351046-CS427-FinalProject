@@ -1,6 +1,6 @@
-Android
+WindowsStandalone
 PlayerPath?
-D:/Unity Repos/Shoot 'Em Up/Shoot'EmUp.apk
+D:/Unity Build/Shoot 'Em Up.exe
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Gameplay.unity
