@@ -14998,7 +14998,7 @@ MonoBehaviour:
   moveOffset: {x: 0, y: 0, z: 190}
   onStart: 1
   reverse: 0
-  duration: 120
+  duration: 150
   onStartMove:
     m_PersistentCalls:
       m_Calls: []

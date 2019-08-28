@@ -46,7 +46,7 @@ public class PowerUpMenu : MonoBehaviour
     {
         if (slow)
         {
-            Time.timeScale = 0.25f;
+            Time.timeScale = 1f;
         }
         else
         {

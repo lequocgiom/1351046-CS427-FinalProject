@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 75
+  controlID: 56
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 76
+  controlID: 57
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 77
+  controlID: 58
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -207,7 +207,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 54
+  controlID: 59
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -389,10 +389,10 @@ MonoBehaviour:
     height: 655
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 60080000
+    scrollPos: {x: 0, y: 2}
+    m_SelectedIDs: c0070000
     m_LastClickedID: 0
-    m_ExpandedIDs: b6befcff68c3fcffb6effcffcc89feffe890feff10a9feff5eb0feff36b8feff0ce5feffbee9feff96f3feff0610ffff0a45ffffd845ffff227affff7081ffffec9cffff60b5ffffaebcffff18dbffffa2dcffff9cfbfffff4ffffff00000000103c0000d43d000022410000e642000034460000f84700009c610000b66800007a6a0000186c0000366d0000dc6d0000243c0100
+    m_ExpandedIDs: a8ebfdffacebfdffbef8ffff9cfbffff00000000a62b0000b82b0000ea2b0000682d00007c2d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -503,11 +503,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.41627094, y: 0.044977866, z: -0.020621907, w: -0.9078933}
     speed: 2
-    m_Value: {x: -0.41627094, y: 0.044977866, z: -0.020621907, w: -0.9078933}
+    m_Value: {x: -0.41627094, y: 0.044977866, z: -0.020621905, w: -0.9078933}
   m_Size:
-    m_Target: 34.67734
+    m_Target: 28.0317
     speed: 2
-    m_Value: 34.67734
+    m_Value: 28.0317
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -558,33 +558,33 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Data Scripts
+    - Assets/Scripts/Weapons
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts/Data Scripts
+  - Assets/Scripts/Weapons
   m_LastFoldersGridSize: 96
   m_LastProjectPath: D:\Unity Repos\Shoot 'Em Up
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 267}
-    m_SelectedIDs: f0290000
-    m_LastClickedID: 10736
+    m_SelectedIDs: 02280000
+    m_LastClickedID: 10242
     m_ExpandedIDs: 00000000d0270000bc280000422900002c2a0000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Audio Scripts
+      m_OriginalName: Audio Scripts
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 10822
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -707,7 +707,7 @@ MonoBehaviour:
     width: 464
     height: 926
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 217.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
