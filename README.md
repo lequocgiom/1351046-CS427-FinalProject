@@ -1,6 +1,6 @@
 # 1351046 - Le Quoc Trung - Final Project
 
-Full project download link at the end of this document.
+Full project (including source, build, marketing, report, demo folders) download link at the end of this document.
 
 # Le Quoc Trung - 1351046 - Final Project of CS427 - Game Development
 
@@ -67,6 +67,6 @@ https://www.youtube.com/watch?v=zymbjqlPfnw
 ## Full project link
 
 <p align="justify">
-Due to the maximum file size restriction of github, I cannot upload the project directly to github, so here is the google drive link to download the project:
+Due to the maximum file size restriction of github, I cannot upload the project directly to github, so here is the google drive link to download the full project (including source, build, marketing, report, demo folders):
 https://drive.google.com/file/d/1rfy5rQFLS9367WfTLWyByNCMAqA2tOI9/view?usp=sharing
   </p>
